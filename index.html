@@ -29,14 +29,28 @@
             padding: 0;
         }
 
-        body {
+        body
+        {
             font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--navy);
             color: var(--clean-white);
             line-height: 1.5;
             overflow-x: hidden;
         }
-
+        <header class="main-header">
+    <div class="container header-flex">
+        <a href="#" class="logo-wrap">
+            <img src="logo.png" alt="Amogh Bandekar Logo" class="campaign-logo">
+            <span class="logo-text">Amogh <strong>Bandekar</strong></span>
+        </a>
+        <nav class="desktop-nav">
+            <a href="#priorities">Priorities</a>
+            <a href="#about">About</a>
+            <a href="#voting">Voting</a>
+        </nav>
+        <a href="mailto:contact@example.com" class="btn-nav">Volunteer</a>
+    </div>
+</header>
         
         .bg-accent {
             position: absolute;
