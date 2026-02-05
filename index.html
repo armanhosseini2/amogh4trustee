@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amogh Bandekar | Students First | Kitchener Trustee Candidate</title>
+    
+    <meta name="description" content="Official campaign site for Amogh Bandekar, Trustee Candidate for Kitchener. A bold vision for WRDSB: Free transit, better tutoring, and less bureaucracy.">
+    <meta property="og:title" content="Amogh Bandekar for Trustee">
+    <meta property="og:description" content="Putting Students First in Kitchener. Join the movement for a better WRDSB.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="headshot.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <style>
+        :root {
+            /* Bold, Rich Political Palette */
+            --navy: #0a192f;
+            --patriot-blue: #112240;
+            --action-gold: #fbbf24;
+            --victory-red: #e11d48;
+            --clean-white: #ffffff;
+            --muted-blue: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--navy);
+            color: var(--clean-white);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* Bold Slanted Background Decoration */
+        .bg-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, var(--victory-red) 0%, transparent 60%);
+            opacity: 0.15;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section - Asymmetric & Impactful */
+        .hero {
+            padding: 80px 0 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .headshot-frame {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .headshot-frame img {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            border-bottom: 8px solid var(--action-gold);
+            box-shadow: 20px 20px 0px var(--patriot-blue);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 0.9;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+        }
+
+        .hero-tag {
+            background: var(--victory-red);
+            padding: 5px 15px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 20px;
+            transform: skewX(-10deg);
+        }
+
+        .slogan-hero {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--action-gold);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        /* Priority "Action" Cards */
+        .priorities {
+            background: var(--clean-white);
+            color: var(--navy);
+            padding: 80px 0;
+            border-radius: 40px 40px 0 0;
+        }
+
+        .priorities h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .priority-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .p-card {
+            background: #f1f5f9;
+            padding: 30px;
+            border-left: 10px solid var(--victory-red);
+            transition: transform 0.3s ease;
+        }
+
+        .p-card:nth-child(even) {
+            border-left-color: var(--navy);
+        }
+
+        .p-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        /* About Section - Professional & Grounded */
+        .about {
+            padding: 100px 0;
+            background: var(--patriot-blue);
+        }
+
+        .about-box {
+            max-width: 700px;
+            margin: 0 auto;
+            border: 2px solid var(--action-gold);
+            padding: 40px;
+            position: relative;
+        }
+
+        .about-box::before {
+            content: "THE VISION";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--action-gold);
+            color: var(--navy);
+            padding: 2px 15px;
+            font-weight: 900;
+        }
+
+        /* Voting Block */
+        .voting {
+            padding: 80px 0;
+            background: var(--victory-red);
+            text-align: center;
+        }
+
+        .voting h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 30px; }
+
+        .vote-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .vote-stat {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .vote-stat span {
+            display: block;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .vote-stat strong {
+            font-size: 1.5rem;
+            display: block;
+        }
+
+        /* Call to Action Buttons */
+        .btn {
+            text-decoration: none;
+            padding: 18px 35px;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            letter-spacing: 1px;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-gold { background: var(--action-gold); color: var(--navy); }
+        .btn-gold:hover { background: var(--clean-white); transform: translateY(-3px); }
+
+        .btn-outline { border: 2px solid var(--clean-white); color: var(--clean-white); margin-top: 10px; }
+
+        /* Sticky Footer */
+        .mobile-cta {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            z-index: 1000;
+        }
+
+        .mobile-cta a {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .cta-ig { background: #E1306C; color: white; }
+        .cta-donate { background: var(--action-gold); color: var(--navy); }
+
+        footer {
+            padding: 60px 0 120px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--muted-blue);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .hero-tag { font-size: 0.9rem; }
+            .slogan-hero { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-accent"></div>
+
+    <section class="hero container">
+        <div class="headshot-frame">
+            <img src="headshot.jpg" alt="Amogh Bandekar">
+        </div>
+        <div class="hero-tag">KITCHENER TRUSTEE CANDIDATE</div>
+        <h1>Amogh<br>Bandekar</h1>
+        <p class="slogan-hero">Students First.</p>
+        
+        <div style="display: flex; gap: 15px; flex-direction: column; width: 100%; max-width: 300px;">
+            <a href="https://instagram.com" class="btn btn-gold">Follow the Campaign</a>
+            <a href="mailto:contact@example.com" class="btn btn-outline">Contact Amogh</a>
+        </div>
+    </section>
+
+    <section class="priorities">
+        <div class="container">
+            <h2>The Student Platform</h2>
+            <div class="priority-grid">
+                <div class="p-card">
+                    <h3>Free Student Transit</h3>
+                    <p>No student should struggle to get to class. We will push for universal bus passes across the region.</p>
+                </div>
+                <div class="p-card">
+                    <h3>Route 13 Solutions</h3>
+                    <p>Unreliable wait times are unacceptable. I'll fight for increased frequency on Route 13 during peak hours.</p>
+                </div>
+                <div class="p-card">
+                    <h3>Direct Tutoring</h3>
+                    <p>Shifting funds from administrative "studies" into direct peer-to-peer and professional tutoring support.</p>
+                </div>
+                <div class="p-card">
+                    <h3>WRDSB Accountability</h3>
+                    <p>Cutting through the red tape. Less time in board meetings, more time focusing on classroom results.</p>
+                </div>
+                <div class="p-card">
+                    <h3>Mental Wellness</h3>
+                    <p>Formalized mental health days to acknowledge the pressures modern students face every single day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-box">
+                <p>Education is the backbone of Kitchener’s future, but for too long, the voices of students and parents have been drowned out by bureaucracy. I’m running for Trustee because I believe in a WRDSB that is transparent, efficient, and relentlessly focused on student outcomes. Whether it's fixing transit or expanding academic support, my approach is simple: if it doesn't help the student in the classroom, it isn't a priority.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="voting">
+        <div class="container">
+            <h2>Get Ready to Vote</h2>
+            <div class="vote-grid">
+                <div class="vote-stat">
+                    <span>Election Day</span>
+                    <strong>Oct 26, 2026</strong>
+                </div>
+                <div class="vote-stat">
+                    <span>Location</span>
+                    <strong>Kitchener, ON</strong>
+                </div>
+                <div class="vote-stat">
+                    <span>Eligibility</span>
+                    <strong>18+ / Cdn Citizen</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 10px;">Connect with the Campaign: <a href="#" style="color: var(--action-gold);">Instagram</a> | <a href="#" style="color: var(--action-gold);">Twitter</a></p>
+            <p class="authorized">Authorized by the Candidate for Trustee in Kitchener</p>
+        </div>
+    </footer>
+
+    <div class="mobile-cta">
+        <a href="https://instagram.com" class="cta-ig">Instagram</a>
+        <a href="mailto:contact@example.com" class="cta-donate">Get Involved</a>
+    </div>
+
+</body>
+</html>
